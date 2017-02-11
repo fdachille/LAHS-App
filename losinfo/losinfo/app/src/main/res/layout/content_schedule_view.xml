@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="LAInfo.ScheduleView"
+    tools:showIn="@layout/activity_schedule_view"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:id="@+id/bellWeb"
+        android:layout_weight="0.5" />
+
+    <com.android.TouchImageView
+        android:id="@id/img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/rsz_lahsschedule"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight=".5"
+        android:layout_marginTop="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.losaltosinfo.justin.losinfo.splashPageFragment"
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/History"
+        android:src="@drawable/history"
+        android:onClick="onHistoryButtonClick"
+        android:clickable="true"
+        android:layout_below="@+id/English"
+        android:layout_alignLeft="@+id/English"
+        android:layout_alignStart="@+id/English" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Art"
+        android:src="@drawable/art"
+        android:onClick="onArtButtonClick"
+        android:clickable="true"
+        android:layout_below="@+id/History"
+        android:layout_alignLeft="@+id/History"
+        android:layout_alignStart="@+id/History" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Language"
+        android:src="@drawable/language"
+        android:onClick="onLanguageButtonClick"
+        android:clickable="true"
+        android:layout_below="@+id/Science"
+        android:layout_alignLeft="@+id/Science"
+        android:layout_alignStart="@+id/Science" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Math"
+        android:src="@drawable/math"
+        android:onClick="onMathButtonClick"
+        android:clickable="true"
+        android:layout_alignTop="@+id/English"
+        android:layout_toLeftOf="@+id/History"
+        android:layout_toStartOf="@+id/History"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Science"
+        android:src="@drawable/science"
+        android:onClick="onScienceButtonClick"
+        android:clickable="true"
+        android:layout_below="@+id/Math"
+        android:layout_alignLeft="@+id/Math"
+        android:layout_alignStart="@+id/Math" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/English"
+        android:src="@drawable/english"
+        android:onClick="onEnglishButtonClick"
+        android:clickable="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

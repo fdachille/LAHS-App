@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/flcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:src="@drawable/lahs2015"-->
+            <!--android:layout_gravity="center" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Los Altos High School"-->
+            <!--android:textColorHighlight="@color/actionBarColor"-->
+            <!--android:textColor="@color/actionBarColor"-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_gravity="center_horizontal|top"-->
+            <!--android:textStyle="bold"-->
+            <!--android:paddingTop="35dp"-->
+            <!--style="@style/AudioFileInfoOverlayText"-->
+            <!--android:textSize="60dp" />-->
+
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/drawer_space"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

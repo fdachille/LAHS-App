@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Los Altos Information</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_classes_list">ClassesList</string>
+    <string name="Map">Map</string>
+    <string name="Schedule">Schedule</string>
+    <string name="Menu">Menu</string>
+    <string name="Teachers">Teachers</string>
+    <string name="title_activity_map_view">MapView</string>
+    <string name="title_activity_map_view_test">MapViewTest</string>
+    <string name="title_activity_schedule_view">ScheduleView</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="planets_array">
+        <item>Home</item>
+        <item>Map</item>
+        <item>Schedule</item>
+        <item>Teachers</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_teacher_list">teacherList</string>
+    <string name="title_activity_calendar_view">CalendarView</string>
+    <string name="title_activity_calendar_list_view">CalendarListView</string>
+    <string name="title_activity_classinfo">classinfo</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_map">Map</string>
+
+</resources>

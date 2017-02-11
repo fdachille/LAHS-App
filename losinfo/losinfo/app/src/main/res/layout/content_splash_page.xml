@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="LAInfo.splashPage"
+    tools:showIn="@layout/activity_splash_page">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Math"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/math"
+        android:onClick="onMathButtonClick"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/English"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/english"
+        android:layout_alignParentEnd="true"
+        android:onClick="onEnglishButtonClick"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Science"
+        android:layout_below="@+id/Math"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/science"
+        android:layout_alignParentStart="true"
+        android:onClick="onScienceButtonClick"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/History"
+        android:layout_below="@+id/English"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/history"
+        android:layout_alignParentEnd="true"
+        android:onClick="onHistoryButtonClick"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Language"
+        android:layout_below="@+id/Science"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/language"
+        android:layout_alignParentStart="true"
+        android:onClick="onLanguageButtonClick"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Art"
+        android:layout_below="@+id/History"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/art"
+        android:layout_alignParentEnd="true"
+        android:onClick="onArtButtonClick"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crapView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

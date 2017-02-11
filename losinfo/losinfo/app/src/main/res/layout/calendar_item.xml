@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Email label -->
+
+    <TextView
+        android:id="@+id/start"
+        android:gravity="center"
+        android:text="Start Time: "
+        android:background="@color/oscarCalendarTimeBackground"
+        android:textColor="@color/LightSlateGrayOSCAR"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="@color/LightSlateGrayOSCAR"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/start"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="8dp" />
+
+    <!--<TextView-->
+        <!--android:gravity="left"-->
+        <!--android:id="@+id/description"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:textColor="@color/LightSlateGrayOSCAR"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:paddingBottom="2dip"-->
+        <!--android:text="Description: "-->
+        <!--android:layout_below="@+id/start"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+    <!--&lt;!&ndash; Mobile number label &ndash;&gt;-->
+
+</RelativeLayout>
