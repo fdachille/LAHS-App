@@ -116,9 +116,9 @@ public class ClassesListFragment extends Fragment {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_classes_list, container, false);
 
-        listview = (ListView) rootView.findViewById(R.id.listViewMain);
+        listview = (ListView) rootView.findViewById(R.id.fragmentClassesListView);
 
-        Log.d("create", "1");
+        Log.d("ClassesLF.onCreateView", "checking if class fetching done");
         while(!ClassListFetcher.getInstance().isDone()) {
             try {
                 Thread.sleep(10);
@@ -126,7 +126,7 @@ public class ClassesListFragment extends Fragment {
 
             }
         }
-        Log.d("create", "2");
+        Log.d("ClassesLF.onCreateView", "classes fetched");
         Log.d("create", ClassListFetcher.getInstance().getAllCourses().toString());
         allCourses = ClassListFetcher.getInstance().getAllCourses();
         populateListView();
@@ -134,12 +134,12 @@ public class ClassesListFragment extends Fragment {
         return rootView;
     }
 
-
     private void populateListView() {
         Log.d("pop", allCourses.toString());
         String desiredCourses = getArguments().getString(password);
-        List<Course> filteredCourses = FluentIterable.from(allCourses).limit(5).filter(new ClassListFetcher.CoursePredicate1(desiredCourses)).toImmutableList();
+        List<Course> filteredCourses = FluentIterable.from(allCourses).filter(new ClassListFetcher.CoursePredicate1(desiredCourses)).toImmutableList();
 
+        Log.d("ClassesLF.populateListV", "filtered courses " + filteredCourses.toString());
         final CourseAdapter adapter = new CourseAdapter(rootView.getContext(), R.layout.course_list_cell, filteredCourses);
         listview.setAdapter(adapter);
 

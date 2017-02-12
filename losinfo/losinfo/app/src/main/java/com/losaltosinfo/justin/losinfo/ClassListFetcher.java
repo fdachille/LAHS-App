@@ -40,6 +40,9 @@ public class ClassListFetcher {
     }
 
     public void downloadCourses() {
+        //Course sampleCourse = new Course("dept", "a", "b", "c", "d");
+        //allCourses = ImmutableList.of(sampleCourse, sampleCourse, sampleCourse, sampleCourse, sampleCourse);
+        //Log.d("CLF.downloadCourses", "done loading "+allCourses.toString());
         new DownloadWebpageTask(new AsyncResult() {
             @Override
             public void onResult(JSONObject object) {
